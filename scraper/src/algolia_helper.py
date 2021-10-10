@@ -30,7 +30,8 @@ class AlgoliaHelper:
         record_count = len(records)
 
         for i in range(0, record_count, 50):
-            self.algolia_index_tmp.save_objects(records[i:i + 50])
+            # self.algolia_index_tmp.save_objects(records[i:i + 50])
+            pass
 
         color = "96" if from_sitemap else "94"
 
